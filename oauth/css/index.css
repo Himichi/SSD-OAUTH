@@ -1,0 +1,63 @@
+html,body {
+	height: 100%;
+}
+
+body{
+	background-color: #f7f9fb;
+	font-size: 14px;
+	font-family: "Arial";
+}
+
+#image {
+	width: 200px;
+	height:200px;
+}
+
+.titleHead {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+.buttons {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #4285F4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
